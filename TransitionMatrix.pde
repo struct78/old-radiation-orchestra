@@ -1,33 +1,4 @@
 public class TransitionMatrix {
-  public TransitionMatrix() {
-    
-  }
-  /*
-   // loop over all state sets and set the count of the co-occurrence in the
-    // transition probability matrix
-    for (int[] array : states) {
-      for (int i = 0; i < array.length - 1; i++) {
-        int count = (int) transitionProbabilities.get(array[i], array[i + 1]);
-        transitionProbabilities.set(array[i], array[i + 1], ++count);
-      }
-    }
-
-    final int[] rowEntries = transitionProbabilities.rowIndices();
-    for (int rowIndex : rowEntries) {
-      DoubleVector rowVector = transitionProbabilities.getRowVector(rowIndex);
-      double sum = rowVector.sum();
-      Iterator<DoubleVectorElement> iterateNonZero = rowVector.iterateNonZero();
-      // loop over all counts and take the log of the probability
-      while (iterateNonZero.hasNext()) {
-        DoubleVectorElement columnElement = iterateNonZero.next();
-        int columnIndex = columnElement.getIndex();
-        double probability = FastMath.log(columnElement.getValue())
-            - FastMath.log(sum);
-        transitionProbabilities.set(rowIndex, columnIndex, probability);
-      }
-    }
-*/
-  
   public int[][] generateMatrix(ArrayList<Message> messages) {
     ArrayList<Message> notes = new ArrayList<Message>();
     
