@@ -8,7 +8,6 @@ public class TransitionMatrix {
      }
     }
     int[][] matrix = new int[128][128];
-    
     for ( int i = 0 ; i < notes.size()-1; i++) {
         Message m = notes.get(i);
         Message n = notes.get(i+1);
@@ -37,8 +36,6 @@ public class TransitionMatrix {
         rowProbability+=(float)probability;
         probabilities[i][j] = probability;
       }
-      
-      println(rowProbability);
     }
     
     return probabilities; 
