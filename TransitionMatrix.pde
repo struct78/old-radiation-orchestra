@@ -29,7 +29,6 @@ public class TransitionMatrix {
       float rowProbability = 0.0F;
       for ( int j = 0 ; j < matrix.length-1; j++) {
         if (matrix[i][j] > 0 ) { 
-          //probability = (float).90*matrix[i][j]/rowSum+.10/128;
           probability = (float)matrix[i][j]/rowSum;
         }
         else {
