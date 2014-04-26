@@ -20,7 +20,7 @@ void setup() {
   // Create playlist
   ArrayList<String> playlist = new ArrayList<String>();
   playlist.add("tristan-and-isolde");
-  playlist.add("die-walküre-magic-fire");
+  playlist.add("die-walkure-magic-fire");
   playlist.add("songs-without-words-book-2-opus-30-no-1");
   
   // Create concert
